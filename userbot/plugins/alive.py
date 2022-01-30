@@ -9,7 +9,7 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
 from userbot import *
-from userbot import LEGENDversion
+from userbot import DRAGONversion
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from userbot.helpers.events import reply_id
@@ -18,8 +18,8 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from . import *
 
-LEGEND_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
-CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@LegendBot_Pros"
+LEGEND_IMG = "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
+CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@DragonBot_Pro"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="legend$"))
@@ -39,9 +39,9 @@ async def amireallyalive(alive):
                 c.append(d)
         alive_emoji = random.choice(c)
     if LEGEND_IMG:
-        LEGEND_caption = f"**LegendBot is Up And Running**\n\n"
+        LEGEND_caption = f"**DragonBot is Up And Running**\n\n"
         LEGEND_caption += f"      🔰Bot Status🔰 \n"
-        LEGEND_caption += f"{alive_emoji} **LegendBo† version**   ~ {LEGENDversion}\n"
+        LEGEND_caption += f"{alive_emoji} **DragonBo† version**   ~ {DARGONversion}\n"
         LEGEND_caption += (
             f"{alive_emoji} **Telethon version**   ~ `{version.__version__}`\n"
         )
@@ -64,11 +64,11 @@ async def amireallyalive(alive):
 msg = (
     gvarstatus("ALIVE_TEMPLATE")
     or f"""
-**  ⚜️ Lêɠêɳ̃dẞø† is Online ⚜️**
+**  ⚜️ Dragonẞø† is Online ⚜️**
      {Config.ALIVE_MSG}
     ** Bot Status **
 **🔰 Owner   :** **{Config.ALIVE_NAME}**
-**✨ LegendBot  :** {LEGENDversion}
+**✨ DragonBot  :** {DRAGONversion}
 **✨ Telethon  :** {version.__version__}
 **✨ Abuse    :**  {abuse_m}
 **✨ Sudo    :**  {is_sudo}
@@ -91,11 +91,11 @@ async def legend_a(event):
         await eor(event, msg)
 
 
-file1 = "https://te.legra.ph/file/2426eab17330c6e6310ea.mp4"
-file2 = "https://te.legra.ph/file/11ec9dd576ee5536125b2.jpg"
-file3 = "https://te.legra.ph/file/d2a5265abdc4e73af1f94.jpg"
-file4 = "https://te.legra.ph/file/d17467283e73c884834a5.jpg"
-file5 = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+file1 = "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
+file2 = "https://te.legra.ph/file/cdbfdc19d6d8801678d6a.jpg"
+file3 = "https://te.legra.ph/file/f295bbe2fd0b8dee43b26.jpg"
+file4 = "https://te.legra.ph/file/a8f1f3b3346732a8c902f.jpg"
+file5 = "https://te.legra.ph/file/7bfabcc582a8b05ee2f0f.jpg"
 """=======================CONSTANTS====================== """
 pm_caption = f"**╭────────────**\n"
 pm_caption += f"┣✨ Owner   ~ {Config.ALIVE_NAME}\n"
