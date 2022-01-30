@@ -75,11 +75,11 @@ if ENV:
             os.environ.get("PING_PIC", None)
             or "https://te.legra.ph/file/ace5feae5b1ac8ea262ed.jpg"
         )
-        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Lêɠêɳ̃dẞøt Is Online"
+        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Dragonẞøt Is Online"
         PM_MSG = os.environ.get("PM_MSG", None)
         INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "OFF")
-        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@LegendBot_Pros")
-        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@Pro_LegendBots.")
+        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@DragonBot_Pro")
+        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@DragonBot_Officel")
         BOT_PIC = os.environ.get("ALIVE_PIC", None)
         # auto bio
         BIO_MSG = os.environ.get("ALIVE_MSG", None)
@@ -88,7 +88,7 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API", None)
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/PROBOY-OP/PRO-LEGENDBOT"
+            "UPSTREAM_REPO", "https://github.com/LEGEND-LX/DRAGONBOT-PRO"
         )
         APP_ID = os.environ.get("APP_ID", None)
         API_HASH = os.environ.get("API_HASH", None)
@@ -134,7 +134,7 @@ if ENV:
             "TMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/"
         )
         TELEGRAPH_SHORT_NAME = (
-            os.environ.get("TELEGRAPH_SHORT_NAME", None) or "LEGENDBOT"
+            os.environ.get("TELEGRAPH_SHORT_NAME", None) or "DRAGONBOT"
         )
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
         # MIRROR ACE API KEY AND TOKEN
