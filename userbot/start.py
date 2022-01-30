@@ -14,7 +14,7 @@ l2 = Config.SUDO_HANDLER
 LEGEND_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
 l1 = Config.HANDLER
 
-perf = "[ Pro Lêɠêɳ̃dẞø† ]"
+perf = "[ Pro Dragonẞø† ]"
 
 onbot = "start - Check if I am Alive \nping - Pong! \ntr - <lang-code> \nbroadcast - Sends Message To all Users In Bot \nid - Shows ID of User And Media. \naddnote - Add Note \nnotes - Shows Notes \nspam - spam value text (value < 100)\nbigspam - spam value text (value > 100) \nraid - Raid value Reply to Anyone \nreplyraid - Reply To Anyone \ndreplyraid - Reply To Anyone \nrmnote - Remove Note \nalive - Am I Alive? \nbun - Works In Group , Bans A User. \nunbun - Unbans A User in Group \nprumote - Promotes A User \ndemute - Demotes A User \npin - Pins A Message \nstats - Shows Total Users In Bot \npurge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \ndel - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
 
@@ -33,31 +33,23 @@ async def hekp():
     try:
         os.environ[
             "PRO_STRING"
-        ] = "String Is A Sensitive Data \nSo Its Protected By PRO-LEGENDBOT"
+        ] = "String Is A Sensitive Data \nSo Its Protected By DRAGONBOT-PRO"
         if Config.LOGGER_ID != 0:
             await bot.send_file(
                 Config.LOGGER_ID,
                 LEGEND_PIC,
-                caption=f"#Start\nPro-LegendBot Has Been Successfully Deployed \nClick Here ~ {Config.BOT_USERNAME}\nAny Query ~ @LegendBot_Pros",
+                caption=f"#Start\nDragonBot-Pro Has Been Successfully Deployed \nClick Here ~ {Config.BOT_USERNAME}\nAny Query ~ @DragonBot_Pro",
             )
     except Exception as e:
         print(str(e))
 
     try:
-        await bot(JoinChannelRequest("@Pro_LegendBots"))
+        await bot(JoinChannelRequest("@DragonBot_Pro"))
     except BaseException:
         pass
 
     try:
-        await bot(JoinChannelRequest("@LegendBot_Pros"))
-    except BaseException:
-        pass
-    try:
-        await bot(leave("@Legend_UserBot"))
-    except BaseException:
-        pass
-    try:
-        await bot(leave("@Official_LegendBot"))
+        await bot(JoinChannelRequest("@DragonBot_Offical"))
     except BaseException:
         pass
 
@@ -155,7 +147,7 @@ async def spams():
 async def install():
     if plc == "ON":
         try:
-            await bot(JoinChannelRequest("@Pro_Plugins"))
+            await bot(JoinChannelRequest("@DragonPro_Plugins"))
         except BaseException:
             pass
         i = 0
