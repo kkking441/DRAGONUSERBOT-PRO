@@ -16,16 +16,16 @@ from telethon.sessions import StringSession
 from userbot.Config import Config
 from var import Var
 
-DEVS = ["5080268903"]
+DEVS = ["2041065447"]
 
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["5080268903"]
+DRAGON_ID = ["2041065447"]
 
 LOGGER = True
 StartTime = time.time()
-LEGENDversion = "v1.0"
-botversion = "v1.0"
+DRAGONversion = "v2.0"
+botversion = "v2.0"
 from logging import DEBUG, INFO, basicConfig, getLogger
 
 from .k import *
@@ -44,10 +44,10 @@ else:
 LOGS = getLogger(__name__)
 
 
-if Config.PRO_STRING:
-    session = StringSession(str(Config.PRO_STRING))
+if Config.DRAGON_STRING:
+    session = StringSession(str(Config.DRAGON_STRING))
 else:
-    session = "PRO-LEGENDBOT"
+    session = "DRAGONBOT-PRO"
 
 try:
     Legend = TelegramClient(
