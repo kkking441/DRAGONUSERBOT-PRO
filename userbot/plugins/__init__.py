@@ -9,8 +9,8 @@ from userbot.plugins.sql_helper.globals import addgvar, delgvar, gvarstatus
 from userbot.utils import *
 
 LEGEND_USER = bot.me.first_name
-Pro_Userboy = bot.uid
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Pro_Userboy})"
+LegendHacker_IN = bot.uid
+legend_mention = f"[{LEGEND_USER}](tg://user?id={LegendHcaker_IN})"
 
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
@@ -20,10 +20,10 @@ bsdk_pic = "./userbot/resources/pics/bsdk.jpg"
 bsdkwale_pic = "./userbot/resources/pics/bsdk_wale.jpg"
 chutiya_pic = "./userbot/resources/pics/chutiya.jpg"
 
-perf = "[ Přô-Lêɠêɳ̃dẞø† ]"
+perf = "[ Přô-Dragonẞø† ]"
 
 
-DEVLIST = ["5080268903"]
+DEVLIST = ["2041065447"]
 
 
 async def get_user_id(ids):
@@ -50,8 +50,8 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.YOUR_CHANNEL or "Pro_LegendBots"
-my_group = Config.YOUR_GROUP or "LegendBot_Pros"
+my_channel = Config.YOUR_CHANNEL or "DragonBot_Official"
+my_group = Config.YOUR_GROUP or "DragonBot_Pro"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
@@ -64,10 +64,10 @@ if mybot.startswith("@"):
 else:
     botname = f"@{mybot}"
 
-chnl_link = "https://t.me/Pro_LegendBots"
-Legend_channel = f"[✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎]({chnl_link})"
-grp_link = "https://t.me/LegendBot_Pros"
-Legend_grp = f"[𝖑𝖊ɠêɳ̃dẞø✞︎ Group]({grp_link})"
+chnl_link = "https://t.me/DragonBot_Official"
+Legend_channel = f"[✞︎t͛ẞ̸Dragonẞø✞︎]({chnl_link})"
+grp_link = "https://t.me/DragonBot_Pro"
+Legend_grp = f"[Dragonẞø✞︎ Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
