@@ -63,7 +63,7 @@ alive_txt = (
          {}
 
          {}Bo† Status{}
-{} **LegendBo† version:** {}
+{} **DragonBo† version:** {}
 {} **Telethon version :** {}
 {} **Uptime  :** {}
 {} **Abuse :** {}
@@ -117,7 +117,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "LEGENDBOT_help":
+        if event.query.user_id == bot.uid and query == "DRAGONBOT_help":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
@@ -126,7 +126,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     apn.append(y)
             HELP_MESSAGE = (
                 os.environ.get("HELP_MESSAGE", None)
-                or f"『{legend_mention}』\n\n⭐ 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍 ⭆ `{len(CMD_HELP)}`\n🔥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}"
+                or f"『{legend_mention}』\n\n💥 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍 ⭆ `{len(CMD_HELP)}`\n💥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}"
             )
             if HELP_MESSAGE:
                 b = HELP_MESSAGE.split(", ")
@@ -137,7 +137,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 help_msg = random.choice(c)
             HELP_PIC = (
                 os.environ.get("HELP_PIC", None)
-                or "https://te.legra.ph/file/b5d01ceea49ee0a822661.mp4"
+                or "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
             )
             if HELP_PIC is not None:
                 b = HELP_PIC.split()
@@ -164,7 +164,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             else:
                 result = builder.article(
                     text="Check Group Inline Permission Or",
-                    title="LegendBot Alive",
+                    title="DragonBot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
@@ -180,7 +180,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         c.append(d)
                 ALV_PIC = random.choice(c)
             else:
-                ALV_PIC = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+                ALV_PIC = "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
             pp = Config.ALIVE_MSG
             if pp is not None:
                 b = pp.split(", ")
@@ -196,7 +196,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 alive_emoji,
                 alive_emoji,
                 alive_emoji,
-                LEGENDversion,
+                DARGONversion,
                 alive_emoji,
                 version.__version__,
                 alive_emoji,
@@ -211,7 +211,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             alv_btn = [
                 [
                     Button.url(
-                        f"{LEGEND_USER}", f"tg://openmessage?user_id={Pro_Userboy}"
+                        f"{LEGEND_USER}", f"tg://openmessage?user_id={LegendHacker_IN}"
                     )
                 ],
                 [
@@ -230,14 +230,14 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     ALV_PIC,
                     text=leg_end,
-                    title="LegendBot Alive",
+                    title="DragonBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     text=leg_end,
-                    title="LegendBot Alive",
+                    title="DragonBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                 )
@@ -245,12 +245,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             fsub_btn = [
                 [
                     Button.url(
-                        f"{LEGEND_USER}", f"tg://openmessage?user_id={Pro_Userboy}"
+                        f"{LEGEND_USER}", f"tg://openmessage?user_id={LegendHacker_IN}"
                     )
                 ],
                 [
-                    Button.url("📍My Channel📍", f"https://t.me/{my_channel}"),
-                    Button.url("💝My Group💝", f"https://t.me/{my_group}"),
+                    Button.url("💫My Channel💫", f"https://t.me/{my_channel}"),
+                    Button.url("💥My Group💥", f"https://t.me/{my_group}"),
                 ],
             ]
             ALIVE_PIC = Config.ALIVE_PIC
@@ -262,7 +262,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         c.append(d)
                 ALV_PIC = random.choice(c)
             else:
-                ALV_PIC = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+                ALV_PIC = "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
             if ALV_PIC and ALV_PIC.endswith((".jpg", ".png")):
                 result = builder.article(
                     buttons=fsub_btn,
@@ -289,7 +289,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         c.append(d)
                 legend_pic = random.choice(c)
             else:
-                legend_pic = "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+                legend_pic = "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
             result = builder.photo(
                 file=legend_pic,
                 text=lege_nd,
@@ -308,7 +308,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"**⚜ Legendary Af Pro - LegendBot ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/PROBOY-OP/LegendBot")],
+                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-LX/DRAGONBOT-PRO")],
                     [
                         Button.url(
                             "💞 Deploy 💞",
@@ -344,20 +344,20 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         c.append(d)
                 ALV_PIC = random.choice(c)
             else:
-                ALV_PIC = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+                ALV_PIC = "https://te.legra.ph/file/57f97415dfa27330e3d1a.jpg"
             markup = event.client.build_reply_markup(buttons)
             photo = types.InputWebDocument(
                 url=ALV_PIC, size=0, mime_type="image/jpeg", attributes=[]
             )
             text, msg_entities = await event.client._parse_message_text(
-                "𝗗𝗘𝗣𝗟𝗢𝗬 𝗬𝗢𝗨𝗥 𝗢𝗪𝗡 𝗣𝗥𝗢 𝗟𝗘𝗚𝗘𝗡𝗗 𝗕𝗢𝗧", "md"
+                "𝗗𝗘𝗣𝗟𝗢𝗬 𝗬𝗢𝗨𝗥 𝗢𝗪𝗡 DRAGON 𝗕𝗢𝗧", "md"
             )
             result = types.InputBotInlineResult(
                 id=str(uuid4()),
                 type="photo",
-                title="LEGENDBOT",
+                title="DRAGONBOT",
                 description="Deploy yourself",
-                url="https://github.com/PROBOY-OP/PRO-USERBOT",
+                url="https://github.com/LEGEND-LX/DRAGONUSERBOT-PRO",
                 thumb=photo,
                 content=photo,
                 send_message=types.InputBotInlineMessageMediaAuto(
@@ -373,7 +373,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is Pro-Lêɠêɳ̃dẞø† PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is Pro-Dragonẞø† PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
@@ -536,7 +536,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 link_preview=False,
             )
         else:
-            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own ©Pro-Lêɠêɳ̃dẞø†™"
+            reply_pop_up_alert = "This Is For My Master Only.Dont Try To Touch Again. Deploy Ur Own ©Pro-Dragonẞø†™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"close")))
@@ -546,13 +546,13 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 f"{legend_emoji1} OPEN MENU {legend_emoji2}", data="reopen"
             )
             await event.edit(
-                f"My Master {Config.ALIVE_NAME} has Been Closed Menu\n\n               [©️Lêɠêɳ̃dẞø†]({chnl_link})",
+                f"My Master {Config.ALIVE_NAME} has Been Closed Menu\n\n               [©️Dragonẞø†]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
             await event.answer(
-                "Deploy Ur Own     ©Pro-Lêɠêɳ̃dẞø†", cache_time=0, alert=True
+                "Deploy Ur Own     ©Pro-Dragonẞø†", cache_time=0, alert=True
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
@@ -571,7 +571,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Deploy Ur Own  ©Pro-Lêɠêɳ̃dẞø†",
+                "Deploy Ur Own  ©Pro-Dragonẞø†",
                 cache_time=0,
                 alert=True,
             )
@@ -660,7 +660,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             )
         else:
             return await event.answer(
-                "Deploy Ur Own ©Pro-Lêɠêɳ̃dẞø†™ ",
+                "Deploy Ur Own ©Pro-Dragonẞø†™ ",
                 cache_time=0,
                 alert=True,
             )
