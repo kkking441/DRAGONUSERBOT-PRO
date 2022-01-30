@@ -9,7 +9,7 @@ class Development(Config):
 
   # the name to display in your alive message.
   # If not filled anything then default value is LEGEND User.
-  ALIVE_NAME = "Pro Boy"
+  ALIVE_NAME = "Dragon-User"
 
   # create any PostgreSQL database.
   # I recommend to use elephantsql and paste that link here
@@ -18,7 +18,7 @@ class Development(Config):
   # After cloning the repo and installing requirements...
   # String session will be saved in your saved message of telegram.
   # Put that string here.
-  PRO_STRING = "Your value"
+  DRAGON_STRING = "Your value"
 
   # Create a bot in @botfather and fill the following values with bot token and username.
   BOT_TOKEN = "Your value" #token
