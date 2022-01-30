@@ -9,13 +9,13 @@ from telethon import Button, TelegramClient, custom, events
 from userbot.Config import Config
 from userbot.start import abuses, addons, assistants, hekp, install, module, spams
 
-from . import LOGS, LEGENDversion, bot
+from . import LOGS, DRAGONversion, bot
 
 l1 = Config.HANDLER
 l2 = Config.SUDO_HANDLER
 LEGEND_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
 
-perf = "[ Pro Lêɠêɳ̃dẞot ]"
+perf = "[ Pro Dragonẞot ]"
 
 onbot = "start - Check if I am Alive \nping - Pong! \ntr - <lang-code> \nbroadcast - Sends Message To all Users In Bot \nid - Shows ID of User And Media. \naddnote - Add Note \nnotes - Shows Notes \nspam - spam value text (value < 100)\nbigspam - spam value text (value > 100) \nraid - Raid value Reply to Anyone \nreplyraid - Reply To Anyone \ndreplyraid - Reply To Anyone \nrmnote - Remove Note \nalive - Am I Alive? \nbun - Works In Group , Bans A User. \nunbun - Unbans A User in Group \nprumote - Promotes A User \ndemute - Demotes A User \npin - Pins A Message \nstats - Shows Total Users In Bot \npurge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \ndel - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
 
@@ -34,7 +34,7 @@ async def add_bot(bot_token):
         bot.me = await bot.get_me()
         bot.uid = telethon.utils.get_peer_id(bot.me)
     except Exception as e:
-        LOGS.error(f"PRO_STRING - {str(e)}")
+        LOGS.error(f"DRAGON_STRING - {str(e)}")
         sys.exit()
 
 
@@ -49,9 +49,9 @@ else:
                 "BOT_TOKEN", api_id=Config.APP_ID, api_hash=Config.API_HASH
             ).start(bot_token=Config.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("♥️ Starting PRO-LEGENDBOT ♥️")
+            LOGS.info("♥️ Starting DRAGONBOT-PRO ♥️")
             bot.loop.run_until_complete(add_bot(Config.BOT_USERNAME))
-            LOGS.info("🥇🔥 PRO-LEGENDBOT Startup Completed 🔥🥇")
+            LOGS.info("💥💫 DRAGONBOT-PRO Startup Completed 💥💫")
         else:
             bot.start()
     except Exception as e:
@@ -65,8 +65,8 @@ tgbot = bot.tgbot
 
 async def killer():
     LEGEND_USER = bot.me.first_name
-    Pro_LegendBoy = bot.uid
-    legd_mention = f"[{LEGEND_USER}](tg://user?id={Pro_LegendBoy})"
+    LegendHacker_IN = bot.uid
+    legd_mention = f"[{LEGEND_USER}](tg://user?id={LegendHacker_IN})"
     name = f"{legd_mention}'s Assistant"
     description = (
         f"I am Assistant Of {legd_mention}.This Bot Can Help U To Chat With My Master"
@@ -115,9 +115,9 @@ async def killer():
 
 async def legends():
     LEGEND_USER = bot.me.first_name
-    Pro_LegendBoy = bot.uid
-    legd_mention = f"[{LEGEND_USER}](tg://user?id={Pro_LegendBoy})"
-    yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully PRO-LEGENDBOT Has Been Deployed \nMy Master ~ 『{legd_mention}』 \nVersion ~ {LEGENDversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
+    LegendHacker_IN = bot.uid
+    legd_mention = f"[{LEGEND_USER}](tg://user?id={LegendHacker_IN})"
+    yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully DRAGONBOT-PRO Has Been Deployed \nMy Master ~ 『{legd_mention}』 \nVersion ~ {LEGENDversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
     try:
         TRY = [[Button.inline("⭐ Start ⭐", data="start")]]
         await tgbot.send_file(
@@ -138,8 +138,8 @@ async def help(event):
             message=f"Hey Sir It's Me {bot_id}, Your Assistant! How Can I Help U?",
             buttons=[
                 [
-                    Button.url(" Support ", "https://t.me/LegendBot_Pros"),
-                    Button.url(" Updates ", "https://t.me/Pro_LegendBots"),
+                    Button.url(" Support ", "https://t.me/DragonBot_Pro"),
+                    Button.url(" Updates ", "https://t.me/DragonBot_Officel"),
                 ],
                 [
                     custom.Button.inline("Users", data="users"),
@@ -194,7 +194,7 @@ async def help(event):
 async def rel(event):
     if event.query.user_id == bot.uid:
         await event.answer(
-            "Reloading Lêɠêɳ̃dẞø†... Wait for few seconds...", cache_time=0, alert=True
+            "Reloading Dragonẞø†... Wait for few seconds...", cache_time=0, alert=True
         )
         await reload_LEGENDBOT()
     else:
@@ -243,7 +243,7 @@ async def users(event):
         await event.delete()
         await tgbot.send_message(
             event.chat_id,
-            message="All Var Name Are Given Below :\n\nABUSE = ON/ OFF\nALIVE_EMOJI = ANY EMOJI, Example: ✨\nALIVE_MESSAGE = Any Message ,Example : PRO-LEGENDBOT Is Online\nALIVE_PIC = telegraph Link, use .tm to get it\nASSISTANT = ON / OFF\nAWAKE_PIC = telegraph link, get from .tm<reply to pic>\n",
+            message="All Var Name Are Given Below :\n\nABUSE = ON/ OFF\nALIVE_EMOJI = ANY EMOJI, Example: ✨\nALIVE_MESSAGE = Any Message ,Example : DRAGONBOT-PRO Is Online\nALIVE_PIC = telegraph Link, use .tm to get it\nASSISTANT = ON / OFF\nAWAKE_PIC = telegraph link, get from .tm<reply to pic>\n",
             buttons=[
                 [custom.Button.inline("Back", data="osg")],
             ],
@@ -351,12 +351,12 @@ bot.loop.run_until_complete(install())
 
 print(
     f"""
-╔════❰PRO-LEGENDBOT❱═❍⊱❁۪۪
+╔════❰DRAGONBOT-PRO❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
-║┣⪼ Group - @LegendBot_Pros
-║┣⪼ CREATOR - @Pro_LegendBoy
-║┣⪼ PRO-LEGENDBOT - {LEGENDversion}
-║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+║┣⪼ Group - @DragonBot_Pro
+║┣⪼ CREATOR - @LegendHacker_IN
+║┣⪼ DRAGONBOT-PRO - {DRAGONversion}
+║┣⪼  💥💫D R A G A N 』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
 )
