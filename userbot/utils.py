@@ -17,7 +17,7 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from userbot import CMD_LIST, LOAD_PLUG, LOGS, PRO, SUDO_LIST, Legend, bot
+from userbot import CMD_LIST, LOAD_PLUG, LOGS, DRAGON, SUDO_LIST, Legend, bot
 from userbot.Config import Config
 from userbot.helpers.exceptions import CancelProcess
 from var import Var
@@ -76,7 +76,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["userbot.plugins." + shortname] = mod
-        LOGS.info("🔥⚡Dragonẞø†⚡🔥 ~ " + shortname)
+        LOGS.info("☄️🌪💥Dragonẞø†☄️🌪💥 ~ " + shortname)
 
 
 def start_assistant(shortname):
@@ -98,7 +98,7 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant" + shortname] = mod
-        print("[🤴Assistant🤴 4.0] ~ HAS ~ 💞Installed💞 ~" + shortname)
+        print("[✨⚡️Assistant✨⚡️ 2.0] ~ HAS ~ 🌪Installed🌪 ~" + shortname)
 
 
 def start_spam(shortname):
@@ -128,7 +128,7 @@ def start_spam(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["Spam" + shortname] = mod
-        print("[🔰Spam🔰 4.0] ~ HAS ~ 💞Installed💞 ~" + shortname)
+        print("[🔰Spam🔰 2.0] ~ HAS ~ ✨⚡️Installed✨⚡️ ~" + shortname)
 
 
 def load_addons(shortname):
@@ -146,7 +146,7 @@ def load_addons(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("♦️Extra Plugin♦️ ~ " + shortname)
+        LOGS.info("♦️☀️Extra Plugin☀️♦️ ~ " + shortname)
     else:
         import importlib
         import sys
@@ -163,7 +163,7 @@ def load_addons(shortname):
         mod.bot = bot
         mod.borg = bot
         mod.DARGON = DRAGON
-        mod.tbot = PRO
+        mod.tbot = DRAGON
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
         mod.Var = Var
@@ -227,7 +227,7 @@ def load_abuse(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.PRO = bot
+        mod.DRAGON = bot
         mod.edit_or_reply = edit_or_reply
         mod.delete_LEGEND = delete_LEGEND
         mod.eod = delete_LEGEND
@@ -648,7 +648,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/Pro_LegendBoy)"
+            link = "[here](https://t.me/LegendHacker_IIN)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
