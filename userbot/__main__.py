@@ -58,7 +58,7 @@ else:
         LOGS.error(f"BOT_TOKEN - {str(e)}")
         sys.exit()
 
-print("📍⚜Loading Modules / Plugins⚜✔")
+print("☄️💥Loading Modules / Plugins☄️💥")
 
 tgbot = bot.tgbot
 
