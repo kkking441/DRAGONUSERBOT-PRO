@@ -58,3 +58,5 @@ if __name__ == "__main__":
     bot.run_until_disconnected()
     sweetie.run_until_disconnected()
     lnbot.run_until_disconnected()
+
+    
