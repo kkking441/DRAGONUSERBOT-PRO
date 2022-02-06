@@ -59,7 +59,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    LOGS.error(f"PRO_STRING - {e}")
+    LOGS.error(f"DRAGON_STRING - {e}")
     sys.exit()
 
 
@@ -74,7 +74,7 @@ PRO = TelegramClient(
 
 
 bot = kbot = Legend
-tbot = PRO
+tbot = DRAGON
 
 
 if not Config.API_HASH:
@@ -102,7 +102,7 @@ if not Config.DB_URI:
     quit(1)
 
 
-if not Config.PRO_STRING:
+if not Config.DRAGON_STRING:
     LOGS.warning("Please fill var HELLBOT SESSION to continue.")
     quit(1)
 
