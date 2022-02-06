@@ -2,7 +2,6 @@ import os
 from pathlib import Path
 
 from telethon.tl.functions.channels import JoinChannelRequest
-from telethon.tl.functions.channels import LeaveChannelRequest as leave
 from telethon.tl.types import InputMessagesFilterDocument
 
 from userbot import bot

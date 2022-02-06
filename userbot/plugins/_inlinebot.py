@@ -308,7 +308,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"**⚜ Legendary Af Pro - LegendBot ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "https://youtu.be/9dQgdUJfk_k")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-LX/DRAGONBOT-PRO")],
+                    [
+                        Button.url(
+                            "📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/LEGEND-LX/DRAGONBOT-PRO"
+                        )
+                    ],
                     [
                         Button.url(
                             "💞 Deploy 💞",
