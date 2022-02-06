@@ -32,7 +32,7 @@ plc = os.environ.get("PLUGIN", None)
 async def hekp():
     try:
         os.environ[
-            "PRO_STRING"
+            "DRAGON_STRING"
         ] = "String Is A Sensitive Data \nSo Its Protected By DRAGONBOT-PRO"
         if Config.LOGGER_ID != 0:
             await bot.send_file(
