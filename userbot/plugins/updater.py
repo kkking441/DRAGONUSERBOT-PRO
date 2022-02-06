@@ -18,14 +18,14 @@ HEROKU_API_KEY = Config.HEROKU_API_KEY or None
 Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 
-UPSTREAM_REPO_BRANCH = "Pro"
+UPSTREAM_REPO_BRANCH = "main"
 
 UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
 REPO_REMOTE_NAME = "temponame"
-IFFUCI_ACTIVE_BRANCH_NAME = "Pro"
+IFFUCI_ACTIVE_BRANCH_NAME = "main"
 NO_HEROKU_APP_CFGD = "No Heroku App Found!"
-HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/Pro"
+HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/main"
 RESTARTING_APP = "Restarting Heroku App..."
 IS_SELECTED_DIFFERENT_BRANCH = (
     "looks like a custom branch {branch_name} "
@@ -44,7 +44,7 @@ NEW_UP_DATE_FOUND = (
     "New update found for {branch_name}\n" "`updating your LegendBot...`"
 )
 REPO_REMOTE_NAME = "temponame"
-IFFUCI_ACTIVE_BRANCH_NAME = "Pro"
+IFFUCI_ACTIVE_BRANCH_NAME = "main"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
