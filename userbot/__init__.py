@@ -20,11 +20,11 @@ DEVS = ["2041065447"]
 
 ENV = os.environ.get("ENV", False)
 
-DRAGON_ID = ["2041065447"]
+LEGEND_ID = ["2041065447"]
 
 LOGGER = True
 StartTime = time.time()
-DRAGONversion = "v2.0"
+LEGENDversion = "v2.0"
 botversion = "v2.0"
 from logging import DEBUG, INFO, basicConfig, getLogger
 
@@ -64,7 +64,7 @@ except Exception as e:
 
 
 PRO = TelegramClient(
-    session="Legend-Bot",
+    session="Dragon-Bot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
     connection=ConnectionTcpAbridged,
@@ -74,7 +74,7 @@ PRO = TelegramClient(
 
 
 bot = kbot = Legend
-tbot = DRAGON
+tbot = LEGEND
 
 
 if not Config.API_HASH:
