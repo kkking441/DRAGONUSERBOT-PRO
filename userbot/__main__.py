@@ -355,7 +355,7 @@ print(
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
 ║┣⪼ Group - @DragonBot_Pro
 ║┣⪼ CREATOR - @LegendHacker_IN
-║┣⪼ DRAGONBOT-PRO - {DRAGONversion}
+║┣⪼ DRAGONBOT-PRO - {LEGENDversion}
 ║┣⪼  💥💫D R A G A N 』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
