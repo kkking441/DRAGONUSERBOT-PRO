@@ -12,7 +12,9 @@ from . import *
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGENDX~PRO"
 
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "I am User Of DragonBot @DragonPro_UserBot"
+DEFAULTUSERBIO = (
+    str(BIO_MSG) if BIO_MSG else "I am User Of DragonBot @DragonPro_UserBot"
+)
 LOGGER_ID = Config.LOGGER_ID
 LOGGER = True
 hui = legend_mention
