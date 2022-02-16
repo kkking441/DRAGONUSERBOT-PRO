@@ -53,7 +53,7 @@ def load_module(shortname):
         mod.bot = Legend
         mod.borg = bot
         mod.DRAGON = DRAGON
-        mod.tbot = LEGEND
+        mod.tbot = DRAGON
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
         mod.Var = Var
