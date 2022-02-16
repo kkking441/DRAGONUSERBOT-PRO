@@ -1,7 +1,7 @@
 import datetime
 
 from bs4 import BeautifulSoup
-from markdown import markdown
+from markdown import pastetext
 from telethon.tl.tlobject import TLObject
 from telethon.tl.types import MessageEntityPre
 from telethon.utils import add_surrogate
