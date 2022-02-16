@@ -17,7 +17,7 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from userbot import CMD_LIST, LOAD_PLUG, LOGS, SUDO_LIST, Legend, bot
+from userbot import CMD_LIST, LOAD_PLUG, DRAGON, LOGS, SUDO_LIST, Legend, bot
 from userbot.Config import Config
 from userbot.helpers.exceptions import CancelProcess
 from var import Var
@@ -52,7 +52,7 @@ def load_module(shortname):
         mod = importlib.util.module_from_spec(spec)
         mod.bot = Legend
         mod.borg = bot
-        mod.dragon = dragon
+        mod.DRAGON = DRAGON
         mod.tbot = Legend
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
