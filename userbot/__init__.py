@@ -63,7 +63,7 @@ except Exception as e:
     sys.exit()
 
 
-PRO = TelegramClient(
+DRAGON = TelegramClient(
     session="Dragon-Bot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
