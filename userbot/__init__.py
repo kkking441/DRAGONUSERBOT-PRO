@@ -74,7 +74,7 @@ PRO = TelegramClient(
 
 
 bot = kbot = Legend
-tbot = LEGEND
+tbot = DRAGON
 
 
 if not Config.API_HASH:
