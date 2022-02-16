@@ -52,8 +52,8 @@ def load_module(shortname):
         mod = importlib.util.module_from_spec(spec)
         mod.bot = Legend
         mod.borg = bot
-        mod.DARGON = DRAGON
-        mod.tbot = DRAGON
+        mod.dragon = dragon
+        mod.tbot = Legend
         mod.Legend = Legend
         mod.tgbot = bot.tgbot
         mod.Var = Var
